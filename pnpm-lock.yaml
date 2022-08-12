@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@iconify-json/ic': ^1.1.8
   '@vitejs/plugin-vue': ^3.0.1
   '@vitejs/plugin-vue-jsx': ^2.0.0
   unocss: ^0.45.6
@@ -8,6 +9,7 @@ specifiers:
   vue: ^3.2.37
 
 dependencies:
+  '@iconify-json/ic': 1.1.8
   '@vitejs/plugin-vue': 3.0.1_vite@3.0.5+vue@3.2.37
   '@vitejs/plugin-vue-jsx': 2.0.0_vite@3.0.5+vue@3.2.37
   unocss: 0.45.6_vite@3.0.5
@@ -337,6 +339,12 @@ packages:
     os: [linux]
     requiresBuild: true
     optional: true
+
+  /@iconify-json/ic/1.1.8:
+    resolution: {integrity: sha512-z7wF/a4wldA+6LVShp8rDCTd3zK/IovKCIdHuiTe5xgxzi9GdnexmZCZbMFol5JqgE1cFDveygTE9wtpfGq3tw==}
+    dependencies:
+      '@iconify/types': 1.1.0
+    dev: false
 
   /@iconify/types/1.1.0:
     resolution: {integrity: sha512-Jh0llaK2LRXQoYsorIH8maClebsnzTcve+7U3rQUSnC11X4jtPnFuyatqFLvMxZ8MLG8dB4zfHsbPfuvxluONw==}

@@ -3,5 +3,5 @@ import SmartyUI from './entry'
 import App from './app.vue'
 
 createApp(App)
-.use(SmartyUI)
-.mount("#app")
+    .use(SmartyUI)
+    .mount("#app")

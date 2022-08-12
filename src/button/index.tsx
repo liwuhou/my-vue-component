@@ -6,6 +6,14 @@ export const props = {
     color: {
         type: String as PropType<IColor>,
         defalut: 'blue'
+    },
+    icon: {
+        type: String,
+        default: ''
+    },
+    size: {
+        type: String,
+        default: ''
     }
 }
 
@@ -13,6 +21,7 @@ export default defineComponent({
     name: 'SButton',
     props,
     setup(props, {slots}) {
+        console.log('🤔 ~ file: index.tsx ~ line 24 ~ setup ~ props', props)
         return () => (
             <button class={`
                 py-2 
@@ -27,7 +36,8 @@ export default defineComponent({
                 cursor-pointer 
                 m-1
             `}>
-                {slots.default?.() ?? ''}
+                { props.icon !== '' ? <i class={`i-ic-baseline-${props.icon} p-3`}></i> : '' }
+                { slots.default?.() ?? '' }
             </button>
         )
     }
