@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
-// import MyButton from './button'
-// import SFCButton from './SFCButton/index.vue'
-import JSXButton from './JSXButton'
+import SmartyUI from './entry'
+import App from './app.vue'
 
-createApp(JSXButton).mount('#app')
+createApp(App)
+.use(SmartyUI)
+.mount("#app")
