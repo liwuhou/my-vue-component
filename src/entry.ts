@@ -1,5 +1,5 @@
 import { App } from 'vue'
-import SButton from './button'
+import SButton from './button/Button'
 import SFCButton from './SFCButton/index.vue'
 import JSXButton from './JSXButton'
 
@@ -8,10 +8,10 @@ export { SButton, SFCButton, JSXButton }
 
 // 以插件的形式导出
 export default {
-    install(app: App): void {
-        app
-            .component(SButton.name, SButton)
-            .component(SFCButton.name, SFCButton)
-            .component(JSXButton.name, JSXButton)
-    }
+  install(app: App): void {
+    app
+      .component(SButton.name, SButton)
+      .component(SFCButton.name, SFCButton)
+      .component(JSXButton.name, JSXButton)
+  },
 }

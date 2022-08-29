@@ -1,0 +1,17 @@
+{
+  "baseUrl": ".",
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "./dist/types",
+    "jsx": "preserve",
+    "paths": {
+      "@": ["./src"],
+      "@utils": ["./src/utils"],
+      "@test": ["./src/utils/test"]
+    }
+  },
+  "include": ["src/**/*.*", "./src/shims-vue.d.ts", "env.d.ts"],
+  "exclude": ["node_modules"],
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": "true"
+}
