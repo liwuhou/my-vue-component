@@ -12,8 +12,7 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress server docs",
-    "prepare": "husky install"
+    "docs:serve": "vitepress server docs"
   },
   "keywords": [],
   "author": "",
